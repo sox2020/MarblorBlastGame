@@ -18,7 +18,6 @@ public class Menu : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Escape) && !canvas.enabled)
 		{
-			print("escape");
 			canvas.enabled = true;
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.Confined;
@@ -26,7 +25,6 @@ public class Menu : MonoBehaviour {
 	
 		} else if (Input.GetKeyDown (KeyCode.Escape) && canvas.enabled)
 		{
-			print("escape");
 			canvas.enabled = false;
 			Cursor.visible = false;
 			Time.timeScale = 1;
