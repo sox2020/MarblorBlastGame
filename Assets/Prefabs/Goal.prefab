@@ -139,7 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4872586192784270}
   - component: {fileID: 65630742209541862}
-  - component: {fileID: 114909889722146574}
+  - component: {fileID: 114559861694125534}
   m_Layer: 0
   m_Name: collider
   m_TagString: Untagged
@@ -402,7 +402,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1584063158820102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.35, y: 18.63, z: -54.05508}
+  m_LocalPosition: {x: -45.63478, y: 19.3, z: 43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4417837994036682}
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1
---- !u!114 &114909889722146574
+--- !u!114 &114559861694125534
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1321466010407656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f30d87fd39c254522bd313c09bb3ddb6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2661e9c1883774e9ca0ff8e05893980b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 1449459185736544}
