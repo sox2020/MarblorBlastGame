@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Powerup : MonoBehaviour {
 
+	public GameObject particles;
 
-	public int id;
+	[SerializeField]
+	int id;
+	[SerializeField]
+	float power;
 
 	[SerializeField]
 	private float rotateSpeed;
@@ -14,4 +18,19 @@ public class Powerup : MonoBehaviour {
 	void Update () {
 		transform.Rotate (rotateSpeed, 0, 0);
 	}
+
+	void OnTriggerEnter( Collider other) {
+		if(other.gameObject.tag == "Player") {
+			print ("SPEEEEEEEEED");
+			if (power != 0) {
+				other.gameObject.GetComponent<PlayerPowerup> ().RunPowerup (id, power);
+			} else {
+				other.gameObject.GetComponent<PlayerPowerup> ().RunPowerup (id);
+			}
+			//particles.SetActive (true);
+			Destroy (gameObject);
+		}
+	}
+
 }
+

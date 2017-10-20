@@ -13,6 +13,7 @@ public class GoalReached : MonoBehaviour {
 		if (col.gameObject.tag == "Player") {
 			particles.SetActive (true);
 			//TODO show a GUI or something
+
 		}
 	}
 }
