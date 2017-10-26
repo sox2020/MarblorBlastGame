@@ -8,7 +8,6 @@ public class PlayerPowerup : MonoBehaviour {
 	private Rigidbody rb;
 	private Movement mv;
 
-
 	void Start() {
 		rb = gameObject.GetComponent<Rigidbody> ();
 		mv = gameObject.GetComponent<Movement> ();
@@ -21,9 +20,9 @@ public class PlayerPowerup : MonoBehaviour {
 			//int id = other.gameObject.GetComponent<Powerup> ().id;
 			print (id);
 			switch (id) {
-			case 0:
-				print ("SPPEEEEEEDDDD!!!!");
-				rb.velocity = rb.velocity * power;
+		case 0:
+			print ("SPPEEEEEEDDDD!!!!");
+			rb.velocity = rb.velocity * power;
 				break;
 		case 1:
 				mv.jump *= power;
