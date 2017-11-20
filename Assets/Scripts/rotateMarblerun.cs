@@ -12,7 +12,7 @@ public class rotateMarblerun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (Vector3.forward * speed); //rotates object
+		transform.Rotate (Vector3.up * speed); //rotates object
 	}
 }
 	
